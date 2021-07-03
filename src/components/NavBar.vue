@@ -9,13 +9,16 @@
       </ul>
     </div>
     <div class="countdown d-flex justify-center">
-      <p class="h-font">6mesi 20giorni 11h 32min 10s</p>
+      <Countdown :compact="true" fontSize="1rem" />
     </div>
   </nav>
 </template>
 
 <script>
+import Countdown from './Countdown.vue'
+
 export default {
+  components: { Countdown },
   data() {
     return {
       menuItems: ['Capsula', 'Marte', 'Contact']
@@ -27,6 +30,8 @@ export default {
 <style lang="scss" scoped>
 nav {
   position: fixed;
+  background-color: #202120;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
