@@ -23,5 +23,29 @@ export default {
 <style lang="scss" scoped>
 section {
   display: flex;
+  width: 100%;
+  h3{
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  p{
+    font-size: 1.2em;
+    margin-bottom: 3em;
+    line-height: 2;
+    text-align: justify;
+  }
+}
+.left-side{
+  width: 50%;
+  padding: 0 8em;
+  display: flex;
+  flex-direction: column;
+}
+.image-container{
+  width: 50%;
+  img{
+    width: 100%;
+    height: 70%;
+  }
 }
 </style>
