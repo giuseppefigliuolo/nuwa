@@ -45,7 +45,7 @@ section {
   width: 50%;
   img{
     width: 100%;
-    height: 70%;
+    height: auto;
   }
 }
 </style>
