@@ -1,7 +1,6 @@
 <template>
   <section class="mb-12">
     <v-img
-      lazy-src="@/assets/mars-hero.jpeg"
       max-height="800"
       max-width="100%"
       src="@/assets/mars-hero.jpeg"

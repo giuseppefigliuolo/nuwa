@@ -1,6 +1,15 @@
 <template>
   <section>
     <div class="full-screen-view">
+      <div class="animation-wrapper">
+        <Lottie
+          class="mt-md-16"
+          :options="defaultOptions"
+          :height="600"
+          :width="600"
+          @animCreated="handleAnimation"
+        />
+      </div>
       <div class="btn-wrapper">
         <nuwa-btn text="enter" @click.native="introClickHandler" />
       </div>
@@ -10,13 +19,27 @@
 
 <script>
 import NuwaBtn from './NuwaBtn.vue'
+import Lottie from 'vue-lottie'
+import logoEntry from '@/assets/logoEntry.json'
 
 export default {
-  components: { NuwaBtn },
+  components: { NuwaBtn, Lottie },
+  data() {
+    return {
+      logoEntry,
+      defaultOptions: { animationData: logoEntry, loop: false },
+      animationSpeed: 1
+    }
+  },
+  mounted() {
+    console.log(logoEntry)
+  },
   methods: {
     introClickHandler() {
-      console.log('+++')
       this.$events.emit('introBtnClicked')
+    },
+    handleAnimation(anim) {
+      this.anim = anim
     }
   }
 }
