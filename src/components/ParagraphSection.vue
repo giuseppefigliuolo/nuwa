@@ -32,7 +32,7 @@ section {
     font-size: 1.2em;
     margin-bottom: 3em;
     line-height: 2;
-    text-align: justify;
+    text-align: left;
   }
 }
 .left-side{
@@ -46,6 +46,32 @@ section {
   img{
     width: 100%;
     height: auto;
+  }
+}
+@media screen and (max-width:700px) {
+  section{
+    flex-direction:column;
+    width: 100%;
+    h3{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    }
+    p{
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+  }
+  .left-side{
+    width: 100%;
+    padding: 2em;
+  }
+  .image-container{
+    width: 100%;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
 }
 </style>
