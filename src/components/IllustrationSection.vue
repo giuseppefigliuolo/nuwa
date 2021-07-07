@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="title">
-            <h3>{{ title }}</h3>
+            <h3>{{ titleIllustration }}</h3>
         </div>
         <div class="illustration">
             <img :src="require('../assets/capsule-illustration.png')" :alt="title" />
@@ -11,11 +11,11 @@
 
 <script>
 export default {
-    props: ['title']
+    props: ['titleIllustration']
 }
 </script>
 
-<style leng="scss" scoped>
+<style lang="scss" scoped>
     section{
         display: flex;
         flex-direction: column;
@@ -24,12 +24,26 @@ export default {
     }
     .title{
         margin: 2em;
+        h3{
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        img{
+            width: 100%;
+        }
     }
-    h3{
-        font-size: 2em;
+    @media screen and (max-width: 700px) {
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .title{
+                margin: 1em;
+                h3{
+                    font-size: 1.3em;
+                }
+            }
     }
-    img{
-        width: 100%;
-    }
+    
    
 </style>

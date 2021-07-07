@@ -9,7 +9,7 @@
       </ul>
     </div>
     <div class="countdown d-flex justify-center">
-      <Countdown :compact="true" fontSize="1rem" />
+      <Countdown :compact="true" fontSize="1.5rem" />
     </div>
   </nav>
 </template>
@@ -43,6 +43,6 @@ nav {
 .menu ul {
   display: flex;
   justify-content: space-evenly;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 </style>

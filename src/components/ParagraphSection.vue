@@ -26,8 +26,9 @@ section {
   display: flex;
   width: 100%;
   h3{
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 2em;
+    text-transform: uppercase;
   }
   p{
     font-size: 1.2em;
@@ -56,7 +57,7 @@ section {
     flex-direction:column;
     width: 100%;
     h3{
-    font-size: 1.8em;
+    font-size: 1.3em;
     margin-bottom: 1em;
     }
     p{
