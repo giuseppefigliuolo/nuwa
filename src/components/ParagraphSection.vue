@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  max-height: 1000px ;
   display: flex;
   width: 100%;
   h3{
@@ -44,12 +45,14 @@ section {
 .image-container{
   width: 50%;
   img{
+    max-height: 100%;
     width: 100%;
     height: auto;
   }
 }
 @media screen and (max-width:700px) {
   section{
+    max-height: 100%;
     flex-direction:column;
     width: 100%;
     h3{
