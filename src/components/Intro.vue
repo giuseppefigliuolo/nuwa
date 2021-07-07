@@ -52,8 +52,14 @@ export default {
 }
 
 .btn-wrapper {
-  position: absolute;
+  position: fixed;
   bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.animation-wrapper {
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
 }

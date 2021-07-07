@@ -37,7 +37,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'obviously', sans-serif !important;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
 }
 
 .h-font {
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'obviously', sans-serif !important;
 }
 
 .p-font {
