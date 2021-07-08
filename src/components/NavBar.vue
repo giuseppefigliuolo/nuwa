@@ -28,25 +28,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav {
-  position: fixed;
-  background-color: #202120;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 0.8rem 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:center ;
-}
-
-.menu ul {
-  display: flex;
-  font-size: 1rem;
-  li{
-    padding: 0 2em;
+  nav {
+    position: fixed;
+    background-color: #202120;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.8rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
   }
-}
+
+  .menu ul {
+    display: flex;
+    font-size: 1rem;
+    li{
+      padding: 0 2em;
+    }
+  }
+  @media screen and (max-width: 700px){
+    nav{
+      flex-direction: column;
+      padding: 1em;
+      .menu ul li{
+        padding: 1em;
+      }
+    }
+  }
 </style>
