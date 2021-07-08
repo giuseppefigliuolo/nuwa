@@ -32,23 +32,25 @@ li {
 a {
   text-decoration: none;
 }
-
+h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'obviously', sans-serif !important;
+  font-family: 'obviously-wide', sans-serif !important;
+  font-weight: 600;
 }
 
 p {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'obviously', sans-serif;
 }
 
 .h-font {
-  font-family: 'obviously', sans-serif !important;
+  font-family: 'obviously-wide', sans-serif !important;
+  font-weight: 500;
 }
 
 .p-font {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'obviously', sans-serif;
 }
 </style>

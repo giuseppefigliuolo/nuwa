@@ -14,7 +14,9 @@ export default {
 
 <style lang="scss" scoped>
   button{
-    border: 1px solid #fff;
+    font-family: 'obviously', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.561);
+    border-radius: 5px;
     padding: 1em;
     width: 100%;
     color: #fff;

@@ -1,13 +1,9 @@
 <template>
   <section>
-    <div class="left-side">
       <h3>{{ title }}</h3>
+      <img :src="require('../assets/sezione_capsula.svg')" :alt="title" />
       <p>{{ paragraph }}</p>
       <NuwaBtn :text="btnText" />
-    </div>
-    <div class="image-container">
-      <img :src="require('../assets/violet-capsule.jpg')" :alt="title" />
-    </div>
   </section>
 </template>
 
@@ -22,12 +18,16 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  max-height: 1000px ;
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
   h3{
+    text-align: center;
     font-size: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     text-transform: uppercase;
   }
   p{
@@ -36,21 +36,15 @@ section {
     line-height: 2;
     text-align: left;
   }
-}
-.left-side{
-  width: 50%;
-  padding: 0 8em;
-  display: flex;
-  flex-direction: column;
-}
-.image-container{
-  width: 50%;
   img{
-    max-height: 100%;
     width: 100%;
     height: auto;
+    margin-bottom: 4em ;
   }
 }
+
+  
+
 @media screen and (max-width:700px) {
   section{
     max-height: 100%;

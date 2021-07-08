@@ -21,7 +21,7 @@ export default {
   components: { Countdown },
   data() {
     return {
-      menuItems: ['Capsula', 'Marte', 'Contact']
+      menuItems: ['Capsula', 'Marte', 'Contatti']
     }
   }
 }
@@ -35,14 +35,18 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 0.8rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.8rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center ;
 }
 
 .menu ul {
   display: flex;
-  justify-content: space-evenly;
   font-size: 1rem;
+  li{
+    padding: 0 2em;
+  }
 }
 </style>
