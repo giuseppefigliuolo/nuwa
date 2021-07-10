@@ -47,6 +47,7 @@ export default {
     font-size: 1rem;
     li{
       padding: 0 2em;
+      cursor: pointer;
     }
   }
   @media screen and (max-width: 700px){
