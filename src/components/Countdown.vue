@@ -1,5 +1,5 @@
 <template>
-  <p v-if="compact" :style="{ 'font-size': fontSize }">
+  <p class="mb-0" v-if="compact" :style="{ 'font-size': fontSize }">
     {{ countdownDateShort }}
   </p>
   <p v-else :style="{ 'font-size': fontSize }">
@@ -55,21 +55,12 @@ export default {
       },
       immediate: true // This ensures the watcher is triggered upon creation
     }
-
-    /* const endDate = new Date('Sep 25, 2021 16:37:52').getTime()
-    const countDownFunc = setInterval(function() {
-      console.log('ì+++')
-      const now = new Date().getTime()
-      console.log(this.countdownDate)
-      // debugger
-      this.countdownDate = endDate - now
-    }, 1000) */
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  p{
-     font-family: 'obviously-wide', sans-serif !important;
-  }
+p {
+  font-family: 'obviously-wide', sans-serif !important;
+}
 </style>

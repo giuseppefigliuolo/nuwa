@@ -1,9 +1,9 @@
 <template>
   <section>
-      <h3>{{ title }}</h3>
-      <img :src="require('../assets/sezione_capsula.svg')" :alt="title" />
-      <p>{{ paragraph }}</p>
-      <NuwaBtn :text="btnText" />
+    <h3>{{ title }}</h3>
+    <img :src="require('../assets/svg/sezione_capsula.svg')" :alt="title" />
+    <p>{{ paragraph }}</p>
+    <NuwaBtn :text="btnText" />
   </section>
 </template>
 
@@ -24,49 +24,47 @@ section {
   align-items: center;
   width: 70%;
   margin: 0 auto;
-  h3{
+  h3 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 4em;
     text-transform: uppercase;
   }
-  p{
+  p {
     font-size: 1.2em;
     margin-bottom: 3em;
     line-height: 2;
     text-align: left;
   }
-  img{
+  img {
     width: 100%;
     height: auto;
-    margin-bottom: 4em ;
+    margin-bottom: 4em;
   }
 }
 
-  
-
-@media screen and (max-width:700px) {
-  section{
+@media screen and (max-width: 700px) {
+  section {
     max-height: 100%;
-    flex-direction:column;
+    flex-direction: column;
     width: 100%;
-    h3{
-    font-size: 1.3em;
-    margin-bottom: 1em;
+    h3 {
+      font-size: 1.3em;
+      margin-bottom: 1em;
     }
-    p{
+    p {
       font-size: 1.2em;
       line-height: 1.5;
     }
   }
-  .left-side{
+  .left-side {
     width: 100%;
     padding: 2em;
   }
-  .image-container{
+  .image-container {
     width: 100%;
 
-    img{
+    img {
       width: 100%;
       height: auto;
     }
