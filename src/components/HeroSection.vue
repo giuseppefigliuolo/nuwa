@@ -6,12 +6,19 @@
       src="@/assets/img/mars-hero.jpeg"
       gradient="to top right, rgba(100,115,201,.23), rgba(25,32,72,.6)"
     />
-    <h2 class="hero-title h-font">Titolo da aggiungere</h2>
+    <h2 class="hero-title h-font">{{ title }}</h2>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    title: {
+      type: String,
+      default: 'Default title'
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

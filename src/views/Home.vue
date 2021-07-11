@@ -7,10 +7,9 @@
       <hero-section />
       <illustration-section
         :titleIllustration="titleIllustration"
+        img="capsule-illustration.png"
       />
-      <video-section
-        :titleVideo="titleVideo" 
-      />
+      <video-section :titleVideo="titleVideo" />
       <paragraph-section
         :title="title"
         :paragraph="paragraph"
@@ -37,15 +36,15 @@ export default {
         'Partecipa al progetto interspaziale Nüwa per un’esperienza unica ed entra a far parte della storia dell’umanità. La capsula costruita per te renderà confortevoli i 9 mesi di viaggio. Nüwa ti darà la possibilità di creare la tua casa nello spazio, il più’ fedele possibile a quello che desideri. Sarà la tua compagna di viaggio e diventerà la tua abitazione per i primi mesi sul nuovo pianeta: potrai scegliere i colori, i contenuti e il design. Guarda la scheda tecnica della capsula e inizia a sognare con Nüwa.',
       btnText: 'SCOPRI IL TUO NUOVO MONDO',
       isIntro: true,
-      titleIllustration:'come sarà la tua casa ',
-      titleVideo:'A 60 milioni di km dalla Terra'
+      titleIllustration: 'come sarà la tua casa ',
+      titleVideo: 'A 60 milioni di km dalla Terra'
     }
   },
   components: {
     ParagraphSection,
     Intro,
     HeroSection,
-    IllustrationSection, 
+    IllustrationSection,
     VideoSection
   },
   mounted() {

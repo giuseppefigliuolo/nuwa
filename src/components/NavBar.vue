@@ -1,17 +1,17 @@
 <template>
   <nav>
     <div class="logo">
-      <img :src="require('../assets/svg/logo.svg')" alt="" />
+      <img :src="require('../assets/svg/logo.svg')" alt="logo-nuwa" />
     </div>
     <div class="menu">
       <ul>
-        <li v-for="item in menuItems" :key="item" class="h-font">
+        <li v-for="(item, i) in menuItems" :key="item + i" class="h-font">
           <router-link :to="{ name: item.link }">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
     <div class="countdown d-flex justify-center">
-      <Countdown :compact="true" fontSize="1rem" />
+      <Countdown :compact="true" :fontSize="'1rem'" />
     </div>
   </nav>
 </template>

@@ -2,7 +2,7 @@
   <section>
     <div class="full-screen-view">
       <div class="animation-wrapper">
-        <LottieAnim width="600" height="600" :options="defaultOptions" />
+        <LottieAnim :width="600" :height="600" :options="defaultOptions" />
       </div>
       <div class="btn-wrapper">
         <nuwa-btn text="enter" @click.native="introClickHandler" />

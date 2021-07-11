@@ -4,17 +4,14 @@
       <h3>{{ titleIllustration }}</h3>
     </div>
     <div class="illustration">
-      <img
-        :src="require('../assets/img/capsule-illustration.png')"
-        :alt="title"
-      />
+      <img :src="require(`@/assets/img/${img}`)" :alt="titleIllustration" />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['titleIllustration']
+  props: ['titleIllustration', 'img']
 }
 </script>
 
@@ -24,6 +21,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 .title {
   margin: 2em;

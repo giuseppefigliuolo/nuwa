@@ -1,9 +1,16 @@
 <template>
   <main>
-    <hero-section />
+    <hero-section title="Marte" />
     <LottieAnim :options="defaultOptions" :height="600" :width="600" />
-    <illustration-section :titleIllustration="titleIllustration" />
-    <paragraph-section :title="title" :paragraph="paragraph" />
+    <illustration-section
+      :titleIllustration="titleIllustration"
+      img="man.png"
+    />
+    <paragraph-section
+      :title="title"
+      :paragraph="paragraph"
+      img="@/assets/img/capsule-illustration.png"
+    />
   </main>
 </template>
 
