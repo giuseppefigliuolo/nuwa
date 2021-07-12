@@ -16,9 +16,7 @@
 import HeroSection from '../components/HeroSection.vue'
 import IllustrationSection from '../components/IllustrationSection.vue'
 import LottieAnim from '@/components/LottieAnim.vue'
-import Marte from '@/assets/lottie/detailsAnimation.json'
 import ParagraphSection from '../components/ParagraphSection.vue'
-import Video from '../components/Video.vue'
 
 export default {
   components: {

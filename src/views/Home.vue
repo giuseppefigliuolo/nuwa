@@ -24,7 +24,6 @@ import ParagraphSection from '../components/ParagraphSection.vue'
 import Intro from '../components/Intro.vue'
 import HeroSection from '../components/HeroSection.vue'
 import IllustrationSection from '../components/IllustrationSection.vue'
-import VideoSection from '../components/VideoSection.vue'
 
 export default {
   components: { VideoSection },
