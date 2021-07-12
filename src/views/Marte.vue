@@ -7,7 +7,7 @@
     <paragraph-section
       :title="title"
       :paragraph="paragraph"
-      img="@/assets/img/capsule-illustration.png"
+      img="@/assets/img/mars-image.jpg"
     />
   </main>
 </template>
@@ -23,8 +23,7 @@ export default {
     LottieAnim,
     HeroSection,
     IllustrationSection,
-    ParagraphSection,
-    Video
+    ParagraphSection
   },
   name: 'Marte',
   data() {
