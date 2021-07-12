@@ -4,7 +4,7 @@
       <intro />
     </template>
     <template v-else>
-      <hero-section />
+      <hero-section title="Le capsule Nuwa nel dettaglio"/>
       <illustration-section
         :titleIllustration="titleIllustration"
         img="capsule-illustration.png"

@@ -1,7 +1,5 @@
 <template>
   <main>
-    <hero-section title="Marte" />
-    <LottieAnim :options="defaultOptions" :height="600" :width="600" />
     <illustration-section
       :titleIllustration="titleIllustration"
       img="man.png"
@@ -20,20 +18,20 @@ import IllustrationSection from '../components/IllustrationSection.vue'
 import LottieAnim from '@/components/LottieAnim.vue'
 import Marte from '@/assets/lottie/detailsAnimation.json'
 import ParagraphSection from '../components/ParagraphSection.vue'
+import Video from '../components/Video.vue'
 
 export default {
   components: {
     LottieAnim,
     HeroSection,
     IllustrationSection,
-    ParagraphSection
+    ParagraphSection,
+    Video
   },
   name: 'Marte',
   data() {
     return {
       Marte,
-      defaultOptions: { animationData: Marte, loop: false },
-      animationSpeed: 1,
       titleIllustration: 'Scheda tecnica di un viaggiatore Nüwa',
       title: 'Come agiremo sul nuovo pianeta?',
       paragraph:

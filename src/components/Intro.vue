@@ -41,7 +41,7 @@ export default {
 
 .btn-wrapper {
   position: fixed;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
 }

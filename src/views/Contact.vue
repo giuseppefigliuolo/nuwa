@@ -1,14 +1,15 @@
 <template>
   <section>
-    <p>Le iscrizioni apriranno tra...</p>
+    <hero-section title="Le iscrizioni apriranno tra..." />
     <countdown fontSize="2.8rem" />
   </section>
 </template>
 
 <script>
 import countdown from '../components/Countdown.vue'
+import HeroSection from '../components/HeroSection.vue'
 export default {
-  components: { countdown }
+  components: { countdown, HeroSection }
 }
 </script>
 
