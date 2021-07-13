@@ -1,6 +1,6 @@
 <template>
   <section>
-    <hero-section title="Le iscrizioni apriranno tra..." />
+    <h3>Le iscrizioni apriranno tra...</h3>
     <countdown fontSize="2.8rem" />
   </section>
 </template>
@@ -21,5 +21,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h3{
+    font-size: 2em;
+    padding-bottom: 3em;
+    color: #E7393E;
+  }
 }
 </style>
