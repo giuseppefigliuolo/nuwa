@@ -22,7 +22,6 @@ export default {
 <style lang="scss" scoped>
     section{
         display: flex;
-        margin: 5em;
         justify-content: space-between;
         .image{
             width: 70%;

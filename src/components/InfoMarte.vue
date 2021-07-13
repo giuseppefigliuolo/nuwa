@@ -18,7 +18,6 @@ export default {
 
 <style lang="scss" scoped>
     section{
-        margin: 2em 0;
         display: flex;
         justify-content: space-between;
         .image{
