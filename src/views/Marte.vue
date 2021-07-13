@@ -1,6 +1,11 @@
 <template>
   <main>
-    <hero-section title="Marte"/>
+    <!-- <hero-section title="Marte"/> -->
+     <div id="app">
+        <div class="container">
+            <my-video :sources="video.sources" :options="video.options"></my-video>
+        </div>
+    </div>
     <illustration-section :titleIllustration="titleIllustration" img="man.png" />
     <paragraph-section
       :title="title"
@@ -15,16 +20,29 @@ import HeroSection from '../components/HeroSection.vue'
 import IllustrationSection from '../components/IllustrationSection.vue'
 import LottieAnim from '@/components/LottieAnim.vue'
 import ParagraphSection from '../components/ParagraphSection.vue'
+import myVideo from 'vue-video'
 export default {
   components: {
     LottieAnim,
     HeroSection,
     IllustrationSection,
-    ParagraphSection
+    ParagraphSection,
+    myVideo
   },
   name: 'Marte',
   data() {
     return {
+      video: {
+        sources: [{
+            src: '@assets/lottie/marte-animation.webm',
+            type: 'video/webm'
+        }],
+        options: {
+            autoplay: true,
+            volume: 0.6,
+            poster: 'http://covteam.u.qiniudn.com/poster.png'
+        }
+      },
       titleIllustration: 'Scheda tecnica di un viaggiatore Nüwa',
       title: 'Come agiremo sul nuovo pianeta?',
       paragraph:
