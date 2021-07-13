@@ -7,7 +7,7 @@
       <hero-section title="Scopri le capsule NUWA"/>
       <illustration-section
         :titleIllustration="titleIllustration"
-        img="capsule-illustration.png"
+        img="capsule-illustration.webp"
       />
       <video-section :titleVideo="titleVideo" />
       <paragraph-section

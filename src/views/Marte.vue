@@ -13,9 +13,14 @@
     <paragraph-section
       :title="title"
       :paragraph="paragraph"
-      img="@/assets/img/mars-image.jpg"
+      img="mars-image.jpg"
     />
     <carousel />
+    <candidatura 
+      :title="title"
+      :text="text"
+      :btnText="btnText"
+    />
   </main>
 </template>
 
@@ -26,6 +31,7 @@ import LottieAnim from '@/components/LottieAnim.vue'
 import ParagraphSection from '../components/ParagraphSection.vue'
 import myVideo from 'vue-video'
 import Carousel from '../components/Carousel.vue'
+import Candidatura from '../components/Candidatura.vue'
 
 export default {
   components: {
@@ -34,7 +40,8 @@ export default {
     IllustrationSection,
     ParagraphSection,
     myVideo,
-    Carousel
+    Carousel,
+    Candidatura
   },
   name: 'Marte',
   data() {
@@ -55,7 +62,12 @@ export default {
       titleIllustration: 'Scheda tecnica di un viaggiatore Nüwa',
       title: 'Come agiremo sul nuovo pianeta?',
       paragraph:
-        'La colonizzazione di Marte è un passaggio fondamentale per l’umanità: anche per questo esiste Space X. Noi di Nüwa vogliamo essere i primi a realizzare questo sogno installando la prima colonia umana della storia su territorio marziano.Il nostro progetto si basa sulla volontà di creare un luogo lontano dalla terra vivibile, cosi facendo l’uomo avrà la possibilità di ampliare i propri orizzonti e normalizzare il turismo spaziale.'
+        'La colonizzazione di Marte è un passaggio fondamentale per l’umanità: anche per questo esiste Space X. Noi di Nüwa vogliamo essere i primi a realizzare questo sogno installando la prima colonia umana della storia su territorio marziano.Il nostro progetto si basa sulla volontà di creare un luogo lontano dalla terra vivibile, cosi facendo l’uomo avrà la possibilità di ampliare i propri orizzonti e normalizzare il turismo spaziale.',
+
+      title: 'Hai tutti i requisiti che cerchiamo? Vuoi cambiare la tua vita?' ,
+      text: 'Se pensi di essere la persona che stiamo cercando, mandaci la tua candidatura. Allontanati dalla monotonia della Terra e diventa un vero astronauta, facci vedere di cosa sei capace e porta le tue abilità con noi su Marte.' ,
+      btnText: 'Canditati con Nüwa '
+
     }
   }
 }

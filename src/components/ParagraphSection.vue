@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3>{{ title }}</h3>
-    <img :src="require('../assets/svg/sezione_capsula.svg')" :alt="title" />
+    <img :src="require(`@/assets/img/${img}`)" :alt="titleIllustration" />
     <p>{{ paragraph }}</p>
     <NuwaBtn :text="btnText" />
   </section>
@@ -12,7 +12,7 @@ import NuwaBtn from './NuwaBtn.vue'
 
 export default {
   components: { NuwaBtn },
-  props: ['title', 'paragraph', 'btnText', 'imgPath']
+  props: ['title', 'paragraph', 'btnText', 'img']
 }
 </script>
 
