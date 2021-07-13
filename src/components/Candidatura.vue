@@ -23,8 +23,10 @@ export default {
     section{
         margin-bottom: 2em;
         display: flex;
+        flex-direction: row;
         .context{
             width: 80%;
+            text-align: justify;
             padding: 3em;
             display: flex;
             flex-direction: column;
@@ -35,6 +37,22 @@ export default {
             p{
                 line-height: 2;
                 font-size: 1em;
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        section{
+            flex-direction: column;
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .context{
+                width: 100%;
+                padding: 2em;
             }
         }
     }

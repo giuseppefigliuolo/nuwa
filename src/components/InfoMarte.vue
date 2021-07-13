@@ -26,15 +26,33 @@ export default {
         }
         .text{
             padding: 0 5em;
+            text-align: justify;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             h2{
                 font-size: 2em;
+                margin-bottom: 1em;
             }
             p{
                 line-height: 2;
                 font-size: 1em;
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        section{
+            margin: 0;
+            flex-direction: column;
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .text{
+                padding: 2em;
             }
         }
     }
