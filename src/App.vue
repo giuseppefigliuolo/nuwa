@@ -25,6 +25,10 @@ export default {
   color: white;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 li {
   list-style-type: none;
 }
