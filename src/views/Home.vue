@@ -4,7 +4,9 @@
       <intro />
     </template>
     <template v-else>
-      <hero-section title="Scopri le capsule NUWA"/>
+      <hero-section 
+        title="Scopri le capsule NUWA"
+      />
       <illustration-section
         :titleIllustration="titleIllustration"
         img="capsule-illustration.webp"
@@ -14,6 +16,7 @@
         :title="title"
         :paragraph="paragraph"
         :btnText="btnText"
+        img="sezione_capsula.png"
       />
     </template>
   </main>
