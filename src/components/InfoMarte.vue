@@ -18,13 +18,14 @@ export default {
 
 <style lang="scss" scoped>
     section{
+        margin: 2em;
         display: flex;
         justify-content: space-between;
         .image{
             width: 60%;
         }
         .text{
-            padding: 0 7em;
+            padding: 0 5em;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

@@ -21,13 +21,11 @@ export default {
 
 <style lang="scss" scoped>
     section{
+        margin-bottom: 2em;
         display: flex;
-        justify-content: space-between;
-        .image{
-            width: 70%;
-        }
         .context{
-            padding-left: 3em;
+            width: 70%;
+            padding: 3em;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
