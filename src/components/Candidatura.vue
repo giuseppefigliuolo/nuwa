@@ -24,7 +24,7 @@ export default {
         margin-bottom: 2em;
         display: flex;
         .context{
-            width: 70%;
+            width: 80%;
             padding: 3em;
             display: flex;
             flex-direction: column;

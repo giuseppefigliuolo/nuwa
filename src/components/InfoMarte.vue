@@ -22,7 +22,7 @@ export default {
         display: flex;
         justify-content: space-between;
         .image{
-            width: 60%;
+            width: 40%;
         }
         .text{
             padding: 0 5em;
