@@ -30,11 +30,11 @@ export default {
             flex-direction: column;
             justify-content: space-between;
             h2{
-                font-size: 2.5em;
+                font-size: 2em;
             }
             p{
                 line-height: 2;
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
     }
