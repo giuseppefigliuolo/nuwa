@@ -26,7 +26,7 @@
             class="img"
             :src="text.img"
             alt=""
-            height="400"
+            height="300"
             max-width="80%"
           />
           <div class="list-container">
