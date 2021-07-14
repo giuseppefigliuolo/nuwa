@@ -1,12 +1,12 @@
 <template>
   <section>
       <div class="image">
-          <img src="@/assets/img/candidatura.webp" alt="">
+          <img src="@/assets/img/candidatura.webp" :alt='titleMars'>
       </div>
-      <div class="context">
+      <div class="text">
           <h2>{{title}}</h2>
           <p>{{text}}</p>
-           <NuwaBtn :text="btnText" />
+          <NuwaBtn :text="btnText" />
       </div>
   </section>
 </template>
@@ -21,26 +21,23 @@ export default {
 
 <style lang="scss" scoped>
     section{
-        margin-bottom: 2em;
         display: flex;
-        flex-direction: row;
-        .context{
-            width: 80%;
-            text-align: justify;
-            padding: 3em;
+        .text{
+            padding: 0 2em;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             h2{
+                margin-bottom: 2em;
                 font-size: 2em;
             }
             p{
-                line-height: 2;
                 font-size: 1em;
+                line-height: 2;
             }
         }
     }
-    @media screen and (max-width: 700px){
+    @media screen and (max-width:700px){
         section{
             flex-direction: column;
             .image{
@@ -50,9 +47,8 @@ export default {
                     height: auto;
                 }
             }
-            .context{
-                width: 100%;
-                padding: 2em;
+            h2{
+                margin-bottom: 1em;
             }
         }
     }

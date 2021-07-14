@@ -18,9 +18,9 @@ export default {
 
 <style lang="scss" scoped>
     section{
-        margin: 2em;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         .image{
             width: 40%;
         }

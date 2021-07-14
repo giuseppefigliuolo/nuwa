@@ -3,7 +3,7 @@
     <!-- <hero-section title="Marte"/> -->
     <div id="app">
       <div class="container">
-        <video autoplay loop muted width="100%">
+        <video autoplay muted width="100%">
           <source
             src="../assets/lottie/marte-animation.webm"
             type="video/webm"
