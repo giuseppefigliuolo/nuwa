@@ -1,20 +1,39 @@
 <template>
   <section>
     <div class="tab fixed-tab vertical-text">
-      <div class="border border--gray"></div>
+      <div class="border-container">
+        <div class="border border--gray"></div>
+      </div>
       <div class="content">
         <h2 class="text-uppercase">personale richiesto</h2>
         <p class="text-uppercase">fasi di colonizzazione</p>
       </div>
     </div>
     <v-carousel v-model="model" class="carousel" height="100%">
-      <v-carousel-item v-for="(text, i) in texts" :key="i + text.img" dark>
-        <h2>Fase {{ i + 1 }}</h2>
-        <div class="border" :style="{ 'background-color': text.color }"></div>
-        <p>{{ text.description }}</p>
-        <v-img :src="text.img" alt="" max-height="400" max-width="500" />
-        <p>{{ text.title }}</p>
-        <p v-for="el in text.list" :key="el">{{ el }}</p>
+      <v-carousel-item
+        v-for="(text, i) in texts"
+        :key="i + text.img"
+        dark
+        class="slide"
+      >
+        <div class="border-container">
+          <h2>Fase {{ i + 1 }}</h2>
+          <div class="border" :style="{ 'background-color': text.color }"></div>
+        </div>
+        <div class="c-content">
+          <p>{{ text.description }}</p>
+          <v-img
+            class="img"
+            :src="text.img"
+            alt=""
+            height="300"
+            max-width="500"
+          />
+          <div class="list-container">
+            <h3>{{ text.title }}</h3>
+            <p v-for="el in text.list" :key="el">{{ el }}</p>
+          </div>
+        </div>
       </v-carousel-item>
     </v-carousel>
   </section>
@@ -90,8 +109,41 @@ section {
 }
 
 .carousel {
-  > * {
-    color: white !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .img {
+    align-self: center;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+
+  > p {
+    width: 80%;
+    margin-top: 2rem;
+    align-self: baseline;
+    justify-self: center;
+  }
+
+  .img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.list-container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  padding-top: 8%;
+
+  h3 {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
   }
 }
 
@@ -109,17 +161,31 @@ section {
 
 .fixed-tab {
   width: 110px;
+}
+.content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .content {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.slide-container {
+  max-width: 50%;
+}
+
+.border-container {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2 {
+    margin-bottom: 1rem;
+    align-self: center;
   }
 }
 
 .border {
-  margin-bottom: auto;
+  justify-self: end;
   height: 48px;
   width: 100%;
   &--gray {
