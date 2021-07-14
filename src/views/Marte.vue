@@ -3,10 +3,12 @@
     <!-- <hero-section title="Marte"/> -->
     <div id="app">
       <div class="container">
-        <video width="320" height="240" controls>
-          <source :src="videoMars" type="video/webm" />
-          <!-- <source src="movie.ogg" type="video/ogg" /> -->
-          Your browser does not support the video tag.
+        <video autoplay loop muted width="100%">
+          <source
+            src="../assets/lottie/marte-animation.webm"
+            type="video/webm"
+          />
+          Sorry, your browser doesn't support embedded videos.
         </video>
       </div>
     </div>
@@ -24,8 +26,6 @@
 import HeroSection from '../components/HeroSection.vue'
 import IllustrationSection from '../components/IllustrationSection.vue'
 import LottieAnim from '@/components/LottieAnim.vue'
-// import myVideo from 'vue-video'
-import videoMars from '@/assets/lottie/marte-animation.webm'
 import Carousel from '../components/Carousel.vue'
 import Candidatura from '../components/Candidatura.vue'
 import InfoMarte from '../components/InfoMarte.vue'
@@ -35,7 +35,6 @@ export default {
     LottieAnim,
     HeroSection,
     IllustrationSection,
-    // myVideo,
     Carousel,
     Candidatura,
     InfoMarte
@@ -43,19 +42,6 @@ export default {
   name: 'Marte',
   data() {
     return {
-      video: {
-        sources: [
-          {
-            src: '@assets/lottie/marte-animation.webm',
-            type: 'video/webm'
-          }
-        ],
-        options: {
-          autoplay: true,
-          volume: 0.6,
-          poster: 'http://covteam.u.qiniudn.com/poster.png'
-        }
-      },
       titleIllustration: 'Scheda tecnica di un viaggiatore Nüwa',
       titleMars: 'Come agiremo sul nuovo pianeta?',
       textMars:
