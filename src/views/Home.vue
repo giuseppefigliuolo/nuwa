@@ -17,19 +17,19 @@
         :punto5="punto5"
       />
       <h2>A 60 milioni di km dalla Terra</h2>
-      <video autoplay loop muted width="100%" height="auto">
+      <video autoplay loop>
         <source
-          src="../assets/lottie/marte-animation.webm"
+          src="../assets/lottie/trailer-video.webm"
           type="video/webm"
         />
         Sorry, your browser doesn't support embedded videos.
       </video>
-      <paragraph-section
-        :title="title"
-        :paragraph="paragraph"
-        :btnText="btnText"
-        img="sezione_capsula.png"
-      />
+        <paragraph-section
+          :title="title"
+          :paragraph="paragraph"
+          :btnText="btnText"
+          img="sezione_capsula.png"
+        />
     </template>
   </main>
 </template>
@@ -81,7 +81,9 @@ export default {
     text-transform: uppercase;
   }
   video{
-    margin: 8em 0;
+    margin: 5em 0;
+    width: 100%;
+    
   }
   @media screen and (max-width:700px) {
     video{

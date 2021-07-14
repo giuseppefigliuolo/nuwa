@@ -14,7 +14,7 @@
     </div>
     <illustration-section
       :titleIllustration="titleIllustration"
-      img="man.webp"
+      img="man.web"
       :punto1="punto1"
       :punto2="punto2"
       :punto3="punto3"
