@@ -48,7 +48,7 @@ export default {
               (countdownDateNotFormatted % (1000 * 60)) / 1000
             )
 
-            this.countdownDate = `${days}giorni ${hours}ore ${minutes}minuti ${seconds}secondi`
+            this.countdownDate = `${days} giorni ${hours} ore ${minutes} minuti ${seconds} secondi`
             this.countdownDateShort = `${days}d ${hours}h ${minutes}m ${seconds}s`
           }, 1000)
         }
@@ -62,5 +62,6 @@ export default {
 <style lang="scss" scoped>
 p {
   font-family: 'obviously-wide', sans-serif !important;
+  font-weight: 500;
 }
 </style>
