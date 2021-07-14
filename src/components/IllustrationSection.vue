@@ -75,9 +75,6 @@ section {
   width: 100%;
   margin-bottom: 2em;
 }
-.illustration{
-  width: 50%;
-}
 // glitch text
   #wrapper {
     text-align: left;

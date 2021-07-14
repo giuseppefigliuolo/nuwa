@@ -26,8 +26,8 @@
             class="img"
             :src="text.img"
             alt=""
-            height="300"
-            max-width="500"
+            height="400"
+            max-width="80%"
           />
           <div class="list-container">
             <h3>{{ text.title }}</h3>
@@ -104,7 +104,6 @@ export default {
 section {
   height: 90vh;
   margin-bottom: 6rem;
-
   display: flex;
 }
 
