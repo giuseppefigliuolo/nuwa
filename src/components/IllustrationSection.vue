@@ -109,14 +109,14 @@ section {
     &::before{
       @include glitchCopy;
       left: 2px;
-      text-shadow: -2px 0 #ff00c1;
+      text-shadow: -2px 0 #70C3BB;
       clip: rect(44px, 450px, 56px, 0);
       animation: glitch-anim 5s infinite linear alternate-reverse;
     }
     &::after {
       @include glitchCopy;
       left: -2px;
-      text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+      text-shadow: -2px 0 #E7393E, 2px 2px #70C3BB;
       animation: glitch-anim2 1s infinite linear alternate-reverse;
     }
   }
