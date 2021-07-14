@@ -10,8 +10,20 @@
       <illustration-section
         :titleIllustration="titleIllustration"
         img="capsule-illustration.webp"
+        :punto1="punto1"
+        :punto2="punto2"
+        :punto3="punto3"
+        :punto4="punto4"
+        :punto5="punto5"
       />
-      <video-section :titleVideo="titleVideo" />
+      <h2>A 60 milioni di km dalla Terra</h2>
+      <video autoplay loop muted width="100%" height="auto">
+        <source
+          src="../assets/lottie/marte-animation.webm"
+          type="video/webm"
+        />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
       <paragraph-section
         :title="title"
         :paragraph="paragraph"
@@ -40,7 +52,11 @@ export default {
       btnText: 'SCOPRI IL TUO NUOVO MONDO',
       isIntro: true,
       titleIllustration: 'come sarà la tua casa ',
-      titleVideo: 'A 60 milioni di km dalla Terra'
+      punto1:'Capsule 4x4 attorno alla navicella madre',
+      punto2:'Trasporta fino a 150 tonnellate di carico',
+      punto3:'Motore RAPTOR VACUM',
+      punto4:'Combustibile raffinabile su Marte',
+      punto5:'Navicella madre con aree comuni per i viaggiatori',
     }
   },
   components: {
@@ -57,3 +73,19 @@ export default {
   }
 }
 </script>
+<style leng="scss" scoped>
+  h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0;
+    text-transform: uppercase;
+  }
+  video{
+    margin: 8em 0;
+  }
+  @media screen and (max-width:700px) {
+    video{
+      margin: 2em 0 ;
+    }    
+  }
+</style>

@@ -15,6 +15,11 @@
     <illustration-section
       :titleIllustration="titleIllustration"
       img="man.png"
+      :punto1="punto1"
+      :punto2="punto2"
+      :punto3="punto3"
+      :punto4="punto4"
+      :punto5="punto5"
     />
     <info-marte :titleMars="titleMars" :textMars="textMars" />
     <carousel />
@@ -50,7 +55,12 @@ export default {
       title: 'Hai tutti i requisiti che cerchiamo? Vuoi cambiare la tua vita?',
       text:
         'Se pensi di essere la persona che stiamo cercando, mandaci la tua candidatura. Allontanati dalla monotonia della Terra e diventa un vero astronauta, facci vedere di cosa sei capace e porta le tue abilità con noi su Marte.',
-      btnText: 'Canditati con Nüwa '
+      btnText: 'Canditati con Nüwa ',
+      punto1: '10/10 di vista (occhiali e lenti si)',
+      punto2: 'Nessuna malattia e/o dipendenza',
+      punto3: 'Nessun disturbo psicologico',
+      punto4: 'Saper nuotare bene',
+      punto5: 'Livello alto di allenamento fisico'
     }
   }
 }
