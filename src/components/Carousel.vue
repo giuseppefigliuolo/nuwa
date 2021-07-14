@@ -7,16 +7,14 @@
         <p class="text-uppercase">fasi di colonizzazione</p>
       </div>
     </div>
-    <v-carousel v-model="model">
-      <v-carousel-item v-for="(text, i) in texts" :key="i + text.img">
+    <v-carousel v-model="model" class="carousel" height="100%">
+      <v-carousel-item v-for="(text, i) in texts" :key="i + text.img" dark>
         <h2>Fase {{ i + 1 }}</h2>
-        <div class="border border--gray"></div>
+        <div class="border" :style="{ 'background-color': text.color }"></div>
         <p>{{ text.description }}</p>
-        <div class="image-wrapper">
-          <img :src="`../assets/${text.img}`" alt="" />
-        </div>
+        <v-img :src="text.img" alt="" max-height="400" max-width="500" />
         <p>{{ text.title }}</p>
-        <p v-for="el in text.array" :key="el">{{ el }}</p>
+        <p v-for="el in text.list" :key="el">{{ el }}</p>
       </v-carousel-item>
     </v-carousel>
   </section>
@@ -24,6 +22,10 @@
 
 <script>
 import 'swiper/swiper.scss'
+import imageOne from '../assets/img/step-one.webp'
+import imageTwo from '../assets/img/step-two.webp'
+import imageThree from '../assets/img/step-three.webp'
+import imageFour from '../assets/img/step-four.webp'
 
 export default {
   data() {
@@ -32,7 +34,7 @@ export default {
       texts: [
         {
           description: `Una delle prime missioni di colonizzazione su Marte sarà quella di trasportare le attrezzature per costruire una "stazione di rifornimento" sul pianeta, e l'astronave stessa sarà il primo insediamento.`,
-          img: `step-one`,
+          img: imageOne,
           title: 'partecipanti alla spedizione',
           list: [
             'pilota',
@@ -45,7 +47,7 @@ export default {
         },
         {
           description: `Nella seconda fase ci concentreremo sullo studio dei terreni e della struttura del pianeta in modo fda potre iniziare la “progettazione della prime case e delle prime coltivazioni” su pianeta.`,
-          img: `step-two`,
+          img: imageTwo,
           title: 'partecipanti alla spedizione',
           list: [
             'pilota',
@@ -58,28 +60,39 @@ export default {
         },
         {
           description: `Nella terza fase procederemo con la “realizzazione di abitazioni e strutture pubbliche” e con lo “studio generico della flora e della fauna” utili allo sviluppo.`,
-          img: `step-three`,
+          img: imageThree,
           title: 'Chi parteciperà',
           list: ['pilota', 'medici', 'infermieri', 'architetti', 'biologi'],
           color: '#F49911'
         },
         {
           description: `Nell’ultima fase termineremo la colonizzazione con l’arrivo di agricoltori che si occuperanno di “coltivare vegetazioni” che serviranno all’uomo per sopravvivere sul nuovo pianeta.`,
-          img: `step-four`,
+          img: imageFour,
           title: 'chi parteciperà',
           list: ['pilota', 'medici', 'infermieri', 'agricoltori', 'allevatori'],
           color: '#B82C35'
         }
       ]
     }
+  },
+  mounted() {
+    console.log()
   }
 }
 </script>
 
 <style lang="scss" scoped>
 section {
-  height: 800px;
+  height: 90vh;
   margin-bottom: 6rem;
+
+  display: flex;
+}
+
+.carousel {
+  > * {
+    color: white !important;
+  }
 }
 
 .tab {
