@@ -3,7 +3,7 @@
     <h3>{{ title }}</h3>
     <img :src="require(`@/assets/img/${img}`)" :alt="titleIllustration" />
     <p>{{ paragraph }}</p>
-    <NuwaBtn :text="btnText"/>
+    <NuwaBtn :text="btnText" to="/marte" />
   </section>
 </template>
 
