@@ -65,7 +65,7 @@ export default {
           color: '#B82C35'
         },
         {
-          description: `Nella seconda fase ci concentreremo sullo studio dei terreni e della struttura del pianeta in modo fda potre iniziare la “progettazione della prime case e delle prime coltivazioni” su pianeta.`,
+          description: `Nella seconda fase ci concentreremo sullo studio dei terreni e della struttura del pianeta in modo da poter iniziare la “progettazione della prime case e delle prime coltivazioni” sul pianeta.`,
           img: imageTwo,
           title: 'partecipanti alla spedizione',
           list: [
