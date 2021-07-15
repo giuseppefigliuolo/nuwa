@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <img :src="require('../assets/svg/logo.svg')" alt="logo-nuwa" />
+      <img :src="require('../assets/svg/nuwa_logo_bianco.png')" alt="logo-nuwa" />
     </div>
     <div class="menu">
       <ul>
@@ -64,7 +64,6 @@ nav {
 a {
   color: white !important;
 }
-
 .menu ul {
   display: flex;
   font-size: 1rem;
