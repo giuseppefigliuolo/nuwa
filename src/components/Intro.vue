@@ -45,12 +45,15 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 }
+.animazione{
+  width: 600px;
+  height: 600px ;
+}
 .animation-wrapper {
   width:50%;
   display:flex;
   flex-direction:column;
-  justify-content:center;
-  align-items: center;
+  align-items:center;
   transform: translateX(-50%);
 }
 
