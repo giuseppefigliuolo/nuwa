@@ -50,7 +50,7 @@ export default {
   width:600px;
 }
 .animation-wrapper {
-  width:90%;
+  width:50%;
   display:flex;
   flex-direction:column;
   justify-content:center;
