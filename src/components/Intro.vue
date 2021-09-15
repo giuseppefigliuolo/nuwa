@@ -2,7 +2,7 @@
   <section>
     <div class="full-screen-view">
       <div class="animation-wrapper">
-        <LottieAnim class="animazione" :options="defaultOptions" />
+        <LottieAnim :width="600" :height="600" :options="defaultOptions" />
       </div>
       <div class="btn-wrapper">
         <nuwa-btn text="enter" @click.native="introClickHandler" />
@@ -45,19 +45,10 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 }
-.animazione{
-  width: 600px;
-  height: 600px ;
-}
+
 .animation-wrapper {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-}
-
-@media screen and (max-width: 700px){
-  .animation-wrapper {
-    width:50%;
-  }
 }
 </style>
