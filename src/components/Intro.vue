@@ -50,8 +50,15 @@ export default {
   width:600px;
 }
 .animation-wrapper {
+  width:90%;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 700px){
+  .animation-wrapper {
+    width:50%;
+  }
 }
 </style>
