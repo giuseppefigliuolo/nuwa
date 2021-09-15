@@ -55,6 +55,8 @@ export default {
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  position: fixed;
+  left: 50%;
   transform: translateX(-50%);
 }
 
