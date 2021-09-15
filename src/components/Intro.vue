@@ -45,10 +45,6 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 }
-.animazione{
-  height: 600px;
-  width:600px;
-}
 .animation-wrapper {
   width:50%;
   display:flex;
