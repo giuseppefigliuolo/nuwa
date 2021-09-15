@@ -50,5 +50,6 @@ export default {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+  mering-top: 3em;
 }
 </style>
