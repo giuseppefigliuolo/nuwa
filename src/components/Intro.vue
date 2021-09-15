@@ -51,8 +51,10 @@ export default {
 }
 .animation-wrapper {
   width:90%;
-  position: fixed;
-  left: 50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
   transform: translateX(-50%);
 }
 
