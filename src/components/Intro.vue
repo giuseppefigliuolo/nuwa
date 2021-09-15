@@ -47,6 +47,7 @@ export default {
 }
 
 .animation-wrapper {
+  width:100%;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
